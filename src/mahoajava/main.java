@@ -15,15 +15,7 @@ import java.util.logging.Logger;
  */
 public class main {
     public static void main(String[] args) {
-        String srcText = "VKU";
-        try {
-            String enrText = MaHoaJava.encrypt(srcText);
-            System.out.println("Trước: " + srcText);
-            System.out.println("Sau: " + enrText);
-        } catch (NoSuchAlgorithmException ex) {
-            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (UnsupportedEncodingException ex) {
-            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        RegisterView registerView = new RegisterView();
+        registerView.setVisible(true);
     }
 }
